@@ -29,7 +29,7 @@ Es un superconjunto tipado e Javascript, que compila a Javascript.
 * Potenciar tu código Javascript.
 * Mayor productividad.
 * Poderoso sistema de tipos.
-* Compila aa ES5, ES6 y más.
+* Compila a ES5, ES6 y más.
 * Proyecto muy activo.
 * Comunidad creciente.
 * Puede prevenir 15% bugs.
