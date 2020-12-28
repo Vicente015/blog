@@ -57,11 +57,8 @@ const About: React.FC = () => (
                   Vicente
                 </h5>
                 <p>
-                  Hey! Soy Vicente, un desarrollador "fullstack" de España al que le apasiona Discord :thinkLul:
-                  Trabajo en muchos proyectos como <a href="https://discordsafe.com">D-Safe</a> o <a href="https://maldito2020.">Maldito2020</a>. Entre otros laterales que acaban muertos :(.
-                  Bueno, cree este blog porque a veces tengo demasiadas ganas de hablar sobre cosas que a nadie le interesa y tengo la extrema
-                  necesidad de ponerlas en algún lado. Así que aquí podrás encontrar cosas sobre desarrollo de bots de Discord, páginas webs,
-                  lenguajes de programación, curiosidades y movidas de Discord y todo lo que se me ocurra :thinking:.
+                  Hola, soy Vicente un estudiante y programador con 17 años. <br/>
+                  Me gusta programar, escuchar música y beber té, ¿por qué no hacerlo todo a la vez?<br/>
                 </p>
               </div>
             </PostFullContent>

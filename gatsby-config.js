@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   siteMetadata: {
     title: 'Vicente015 Blog',
-    description: 'El blog donde un desarrollador aburrido que conoce cosas sobre Discord puede dar su opinión subjetiva completamente irrelevante.',
+    description: 'Pensamientos, programación y disparates de un astronauta',
     siteUrl: 'https://blog.vicente015.dev',
   },
   mapping: {

@@ -1,7 +1,3 @@
-- id: speeches
-  description: Some of the greatest words ever spoken.
-  image: img/speeches-cover.jpg
-
-- id: pruebas
-  description: Pruebas random idk idk
-  image: img/background.png
+- id: coding
+  description: Cosas relacionadas con la programación
+  image: img/CoverCoding.png

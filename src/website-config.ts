@@ -50,7 +50,7 @@ export interface WebsiteConfig {
 
 const config: WebsiteConfig = {
   title: 'Vicente015 Blog',
-  description: 'El blog donde un desarrollador aburrido que conoce cosas sobre Discord puede dar su opinión subjetiva completamente irrelevante.',
+  description: 'Pensamientos, programación y disparates de un astronauta',
   logo: 'img/bloglogo.png',
   coverImage: 'img/background.png',
   lang: 'es',
@@ -61,7 +61,7 @@ const config: WebsiteConfig = {
   mailchimpName: 'b_a89b6987ac248c81b0b7f3a0f_7d777b7d75',
   mailchimpEmailFieldName: 'MERGE0',
   googleSiteVerification: 'GoogleCode',
-  footer: 'construido bajo Gatsby Casper',
+  footer: 'Todos los derechos reservados.',
 };
 
 export default config;
