@@ -30,9 +30,7 @@ export const SiteNavMain = css`
 export const SiteMain = css`
   flex-grow: 1;
 
-  @media (prefers-color-scheme: dark) {
-    background: ${colors.darkmode};
-  }
+  background: ${colors.darkmode};
 `;
 
 export const SiteTitle = styled.h1`
@@ -79,9 +77,7 @@ export const PostFeed = css`
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 
-  @media (prefers-color-scheme: dark) {
-    background: ${colors.darkmode};
-  }
+  background: ${colors.darkmode};
 `;
 
 export const SocialLink = css`
@@ -128,7 +124,7 @@ export const SiteHeaderStyles = css`
   background: ${lighten('-0.05', colors.darkgrey)} no-repeat center center;
   background-size: cover;
 
-  :before {
+  /*:before {
     content: '';
     position: absolute;
     top: 0;
@@ -137,7 +133,7 @@ export const SiteHeaderStyles = css`
     left: 0;
     z-index: 10;
     display: block;
-  }
+  }*/
   :after {
     content: '';
     position: absolute;
@@ -151,9 +147,8 @@ export const SiteHeaderStyles = css`
     background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
   }
 
-  @media (prefers-color-scheme: dark) {
-    :before {
-    }
+  :before {
+  }
   }
 `;
 
@@ -164,10 +159,8 @@ export const AuthorProfileImage = css`
   height: 60px;
   border: none;
 
-  @media (prefers-color-scheme: dark) {
-    box-shadow: 0 0 0 6px hsla(0, 0%, 100%, 0.04);
-    background: ${colors.darkmode};
-  }
+  box-shadow: 0 0 0 6px hsla(0, 0%, 100%, 0.04);
+  background: ${colors.darkmode};
 `;
 
 // tag and author post lists
@@ -198,7 +191,7 @@ export const ResponsiveHeaderBackground = styled.div<{ backgroundImage?: string 
     background: #090a0b no-repeat 50%;
     background-image: url(${p.backgroundImage});
 
-    :before {
+    /*:before {
       content: '';
       position: absolute;
       top: 0;
@@ -207,7 +200,7 @@ export const ResponsiveHeaderBackground = styled.div<{ backgroundImage?: string 
       left: 0;
       z-index: 10;
       display: block;
-    }
+    }*/
 
     :after {
       content: '';
@@ -222,9 +215,8 @@ export const ResponsiveHeaderBackground = styled.div<{ backgroundImage?: string 
       background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
     }
 
-    @media (prefers-color-scheme: dark) {
-      &:before {
-      }
+    &:before {
+    }
     }
   `}
 
@@ -305,19 +297,17 @@ export const ResponsiveHeaderBackground = styled.div<{ backgroundImage?: string 
       padding-bottom: 10px;
     }
   }
-  @media (prefers-color-scheme: dark) {
-    color: rgba(255, 255, 255, 0.9);
-    /* background: var(--darkmode); */
-    background: ${colors.darkmode};
+  color: rgba(255, 255, 255, 0.9);
+  /* background: var(--darkmode); */
+  background: ${colors.darkmode};
 
-    .site-header-content {
-      /* border-bottom-color: color(var(--darkmode) l(+15%)); */
-      border-bottom-color: ${lighten('0.15', colors.darkmode)};
-    }
+  .site-header-content {
+    /* border-bottom-color: color(var(--darkmode) l(+15%)); */
+    border-bottom-color: ${lighten('0.15', colors.darkmode)};
+  }
 
-    .author-social-link a {
-      color: rgba(255, 255, 255, 0.75);
-    }
+  .author-social-link a {
+    color: rgba(255, 255, 255, 0.75);
   }
   `}
 `;
@@ -389,20 +379,18 @@ export const NoImage = css`
       padding: 12vw 0 20px;
     }
   }
-  @media (prefers-color-scheme: dark) {
-    .no-image {
-      color: rgba(255, 255, 255, 0.9);
-      /* background: var(--darkmode); */
-      background: ${colors.darkmode};
-    }
+  .no-image {
+    color: rgba(255, 255, 255, 0.9);
+    /* background: var(--darkmode); */
+    background: ${colors.darkmode};
+  }
 
-    .no-image .site-header-content {
-      /* border-bottom-color: color(var(--darkmode) l(+15%)); */
-      border-bottom-color: ${lighten('0.15', colors.darkmode)};
-    }
+  .no-image .site-header-content {
+    /* border-bottom-color: color(var(--darkmode) l(+15%)); */
+    border-bottom-color: ${lighten('0.15', colors.darkmode)};
+  }
 
-    .no-image .author-social-link a {
-      color: rgba(255, 255, 255, 0.75);
-    }
+  .no-image .author-social-link a {
+    color: rgba(255, 255, 255, 0.75);
   }
 `;
