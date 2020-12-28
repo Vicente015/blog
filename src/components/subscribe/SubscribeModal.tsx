@@ -137,10 +137,8 @@ const SubscribeOverlay = styled.div<SubscribeOverlayProps>`
       margin: 12px 0 0;
     }
   }
-  @media (prefers-color-scheme: dark) {
-    p {
-      color: rgba(255, 255, 255, 0.7);
-    }
+  p {
+    color: rgba(255, 255, 255, 0.7);
   }
 `;
 

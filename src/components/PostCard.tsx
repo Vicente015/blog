@@ -95,10 +95,7 @@ const PostCardStyles = css`
   border-bottom: 1px solid ${lighten('0.12', colors.lightgrey)};
   background-size: cover;
 
-  @media (prefers-color-scheme: dark) {
-    /* border-bottom-color: color(var(--darkmode) l(+8%)); */
     border-bottom-color: ${lighten('0.08', colors.darkmode)};
-  }
 `;
 
 const PostCardLarge = css`
@@ -198,18 +195,14 @@ const PostCardTitle = styled.h2`
   line-height: 1.15em;
   transition: color 0.2s ease-in-out;
 
-  @media (prefers-color-scheme: dark) {
     color: rgba(255, 255, 255, 0.85);
-  }
 `;
 
 const PostCardExcerpt = styled.section`
   font-family: Georgia, serif;
 
-  @media (prefers-color-scheme: dark) {
     /* color: color(var(--midgrey) l(+10%)); */
     color: ${lighten('0.1', colors.midgrey)} !important;
-  }
 `;
 
 const PostCardMeta = styled.footer`
@@ -237,15 +230,12 @@ const PostCardBylineContent = styled.div`
 
   a {
     /* color: color(var(--darkgrey) l(+20%)); */
-    color: ${lighten('0.2', colors.darkgrey)};
     font-weight: 600;
   }
 
-  @media (prefers-color-scheme: dark) {
     a {
       color: rgba(255, 255, 255, 0.75);
     }
-  }
 `;
 
 const PostCardHeader = styled.header`
@@ -261,10 +251,8 @@ export const StaticAvatar = css`
   border: #fff 2px solid;
   border-radius: 100%;
 
-  @media (prefers-color-scheme: dark) {
     /* border-color: color(var(--darkgrey) l(+2%)); */
     border-color: ${lighten('0.02', colors.darkgrey)};
-  }
 `;
 
 export const AuthorProfileImage = css`
@@ -272,11 +260,8 @@ export const AuthorProfileImage = css`
   width: 100%;
   height: 100%;
   /* background: color(var(--lightgrey) l(+10%)); */
-  background: ${lighten('0.1', colors.lightgrey)};
   border-radius: 100%;
   object-fit: cover;
 
-  @media (prefers-color-scheme: dark) {
-    background: ${colors.darkmode};
-  }
+  background: ${colors.darkmode};
 `;

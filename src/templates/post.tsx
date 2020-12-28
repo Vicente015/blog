@@ -253,15 +253,8 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
 const PostTemplate = css`
   .site-main {
     margin-top: 64px;
-    background: #fff;
+    background: ${colors.darkmode};
     padding-bottom: 4vw;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .site-main {
-      /* background: var(--darkmode); */
-      background: ${colors.darkmode};
-    }
   }
 `;
 
@@ -316,7 +309,7 @@ const PostFullTags = styled.section`
 
 const PostFullCustomExcerpt = styled.p`
   margin: 20px 0 0;
-  color: var(--midgrey);
+  color: ${lighten('0.1', colors.midgrey)};
   font-family: Georgia, serif;
   font-size: 2.3rem;
   line-height: 1.4em;
@@ -325,11 +318,6 @@ const PostFullCustomExcerpt = styled.p`
   @media (max-width: 500px) {
     font-size: 1.9rem;
     line-height: 1.5em;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    /* color: color(var(--midgrey) l(+10%)); */
-    color: ${lighten('0.1', colors.midgrey)};
   }
 `;
 
@@ -369,23 +357,12 @@ const PostFullByline = styled.div`
     font-weight: 500;
   }
 
-  .post-full-byline-meta h4 a {
-    /* color: color(var(--darkgrey) l(+10%)); */
-    color: ${lighten('0.1', colors.darkgrey)};
-  }
-
-  .post-full-byline-meta h4 a:hover {
-    /* color: var(--darkgrey); */
-    color: ${colors.darkgrey};
-  }
-
   .post-full-byline-meta .bull {
     display: inline-block;
     margin: 0 4px;
     opacity: 0.6;
   }
 
-  @media (prefers-color-scheme: dark) {
     /* border-top-color: color(var(--darkmode) l(+15%)); */
     border-top-color: ${lighten('0.15', colors.darkmode)};
 
@@ -396,20 +373,16 @@ const PostFullByline = styled.div`
     .post-full-byline-meta h4 a:hover {
       color: #fff;
     }
-  }
 `;
 
 export const PostFullTitle = styled.h1`
   margin: 0 0 0.2em;
-  color: ${setLightness('0.05', colors.darkgrey)};
   @media (max-width: 500px) {
     margin-top: 0.2em;
     font-size: 3.3rem;
   }
 
-  @media (prefers-color-scheme: dark) {
-    color: rgba(255, 255, 255, 0.9);
-  }
+  color: rgba(255, 255, 255, 0.9);
 `;
 
 const PostFullImage = styled.figure`

@@ -134,14 +134,21 @@ const AuthorCardStyles = css`
   width: 400px;
   font-size: 1.4rem;
   line-height: 1.5em;
-  background: white;
   border-radius: 3px;
-  box-shadow: rgba(39, 44, 49, 0.08) 0 12px 26px, rgba(39, 44, 49, 0.06) 1px 3px 8px;
   opacity: 0;
   transition: all 0.35s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   transform: scale(0.98) translateY(15px);
   pointer-events: none;
   padding: 20px 20px 22px;
+
+  /* background: color(var(--darkmode) l(+4%)); */
+  background: ${lighten('0.04', colors.darkmode)};
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.4);
+
+  :before {
+    /* border-top-color: color(var(--darkmode) l(+4%)); */
+    border-top-color: ${lighten('0.04', colors.darkmode)};
+  }
 
   :before {
     content: '';
@@ -200,17 +207,6 @@ const AuthorCardStyles = css`
   @media (max-width: 650px) {
     display: none;
   }
-
-  @media (prefers-color-scheme: dark) {
-    /* background: color(var(--darkmode) l(+4%)); */
-    background: ${lighten('0.04', colors.darkmode)};
-    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.4);
-
-    :before {
-      /* border-top-color: color(var(--darkmode) l(+4%)); */
-      border-top-color: ${lighten('0.04', colors.darkmode)};
-    }
-  }
 `;
 
 const AuthorAvatar = css`
@@ -228,8 +224,5 @@ const AuthorAvatar = css`
     height: 36px;
   }
 
-  @media (prefers-color-scheme: dark) {
-    /* border-color: color(var(--darkgrey) l(+2%)); */
-    border-color: ${lighten('0.02', colors.darkgrey)};
-  }
+  border-color: ${lighten('0.02', colors.darkgrey)};
 `;

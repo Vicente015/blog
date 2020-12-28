@@ -437,7 +437,6 @@ export const PostFullContent = styled.section`
     border: ${lighten('-0.01', colors.whitegrey)} 1px solid;
   }
 
-  @media (prefers-color-scheme: dark) {
     /* background: var(--darkmode); */
     background: ${colors.darkmode};
 
@@ -511,7 +510,6 @@ export const PostFullContent = styled.section`
       color: rgba(255, 255, 255, 0.75);
       box-shadow: 0 0 1px rgba(255, 255, 255, 0.9);
     }
-  }
 
   /* Start Syntax Highlighting */
   /* Taken from overreacted https://github.com/gaearon/overreacted.io/blob/942b41555f5e5ccbb5f93f6c26142cd90b314236/src/utils/global.css#L68 */

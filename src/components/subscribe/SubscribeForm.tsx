@@ -64,7 +64,6 @@ const SubscribeEmail = styled.input`
   /* border: color(var(--lightgrey) l(+7%)) 1px solid; */
   border: ${lighten('0.07', colors.lightgrey)} 1px solid;
   /* color: var(--midgrey); */
-  color: ${colors.midgrey};
   font-size: 1.8rem;
   line-height: 1em;
   font-weight: normal;
@@ -77,10 +76,8 @@ const SubscribeEmail = styled.input`
   :focus {
     outline: 0;
     /* border-color: color(var(--lightgrey) l(-2%)); */
-    border-color: ${lighten('-0.02', colors.lightgrey)};
   }
 
-  @media (prefers-color-scheme: dark) {
     /* border-color: color(var(--darkmode) l(+6%)); */
     border-color: ${lighten('0.06', colors.darkmode)};
     color: rgba(255, 255, 255, 0.9);
@@ -91,7 +88,6 @@ const SubscribeEmail = styled.input`
       /* border-color: color(var(--darkmode) l(+25%)); */
       border-color: ${lighten('0.25', colors.darkmode)};
     }
-  }
 `;
 
 const SubscribeFormButton = styled.button`
@@ -133,9 +129,7 @@ const SubscribeFormButton = styled.button`
     width: 100%;
   }
 
-  @media (prefers-color-scheme: dark) {
-    opacity: 0.9;
-  }
+  opacity: 0.9;
 `;
 
 const FormGroup = styled.div`

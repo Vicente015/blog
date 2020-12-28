@@ -23,14 +23,11 @@ const PageTemplate = css`
   .site-main {
     margin-top: 64px;
     padding-bottom: 4vw;
-    background: #fff;
   }
 
-  @media (prefers-color-scheme: dark) {
-    .site-main {
-      /* background: var(--darkmode); */
-      background: ${colors.darkmode};
-    }
+  .site-main {
+    /* background: var(--darkmode); */
+    background: ${colors.darkmode};
   }
 `;
 

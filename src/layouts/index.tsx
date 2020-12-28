@@ -276,7 +276,6 @@ const IndexLayout: React.FC<IndexProps> = props => {
           }
           body {
             overflow-x: hidden;
-            color: ${lighten('-0.3', colors.midgrey)};
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
               Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
             font-size: 1.6rem;
@@ -478,19 +477,12 @@ const IndexLayout: React.FC<IndexProps> = props => {
             font-weight: 500;
           }
 
-          /* globals from screen.css */
           body {
-            background: #fff;
+            color: rgba(255, 255, 255, 0.75);
+            background: ${colors.darkmode};
           }
-
-          @media (prefers-color-scheme: dark) {
-            body {
-              color: rgba(255, 255, 255, 0.75);
-              background: ${colors.darkmode};
-            }
-            img {
-              opacity: 0.9;
-            }
+          img {
+            opacity: 0.9;
           }
         `}
       />
