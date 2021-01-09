@@ -17,7 +17,7 @@ import { Subscribe } from '../components/subscribe/Subscribe';
 import { Wrapper } from '../components/Wrapper';
 import IndexLayout from '../layouts';
 import { colors } from '../styles/colors';
-import { inner, outer, SiteMain } from '../styles/shared';
+import { inner, outer, SiteMain, linkSvg } from '../styles/shared';
 import config from '../website-config';
 import { AuthorList } from '../components/AuthorList';
 
@@ -56,6 +56,7 @@ interface PageTemplateProps {
         excerpt: string;
         tags: string[];
         author: Author[];
+        github: string;
       };
     };
     relatedPosts: {
@@ -98,6 +99,7 @@ export interface PageContext {
     draft?: boolean;
     tags: string[];
     author: Author[];
+    github: string;
   };
 }
 
@@ -138,7 +140,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
         {/* not sure if modified time possible */}
         {/* <meta property="article:modified_time" content="2018-08-20T15:12:00.000Z" /> */}
         {post.frontmatter.tags && (
-          <meta property="article:tag" content={post.frontmatter.tags[0]} />
+          <meta property="article:tag" content={post.frontmatter.tags.join(', ')} />
         )}
 
         {config.facebook && <meta property="article:publisher" content={config.facebook} />}
@@ -156,7 +158,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
         <meta name="twitter:label1" content="Written by" />
         <meta name="twitter:data1" content={post.frontmatter.author[0].id} />
         <meta name="twitter:label2" content="Filed under" />
-        {post.frontmatter.tags && <meta name="twitter:data2" content={post.frontmatter.tags[0]} />}
+        {post.frontmatter.tags && <meta name="twitter:data2" content={post.frontmatter.tags.join(', ')} />}
         {config.twitter && (
           <meta
             name="twitter:site"
@@ -172,7 +174,7 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
         {width && <meta property="og:image:width" content={width} />}
         {height && <meta property="og:image:height" content={height} />}
       </Helmet>
-      <Wrapper css={PostTemplate}>
+      <Wrapper css={PostTemplate, linkSvg}>
         <header className="site-header">
           <div css={[outer, SiteNavMain]}>
             <div css={inner}>
@@ -186,12 +188,23 @@ const PageTemplate = ({ data, pageContext, location }: PageTemplateProps) => {
             <article css={[PostFull, !post.frontmatter.image && NoImage]}>
               <PostFullHeader className="post-full-header">
                 <PostFullTags className="post-full-tags">
-                  {post.frontmatter.tags && post.frontmatter.tags.length > 0 && (
-                    <Link to={`/tags/${_.kebabCase(post.frontmatter.tags[0])}/`}>
-                      {post.frontmatter.tags[0]}
-                    </Link>
-                  )}
+                  {post.frontmatter.tags && post.frontmatter.tags.length > 0 && post.frontmatter.tags.map(tag => {
+                    return (
+                      <Link key={tag} to={`/tags/${_.kebabCase(tag)}/`}>
+                        {`${tag}`}
+                      </Link>
+                    );
+                  })}
                 </PostFullTags>
+                {post.frontmatter.github && (
+                  <GitHub className="post-github">
+                    <Link key={post.frontmatter.github} to={`${post.frontmatter.github}`}>
+                      <svg width="112" height="112" viewBox="0 0 112 112">
+                        <path d="M55.9563 8.3454C28.9078 8.33446 7 30.2313 7 57.2579C7 78.6298 20.7047 96.797 39.7906 103.469C42.3609 104.114 41.9672 102.288 41.9672 101.041V92.5641C27.125 94.3032 26.5234 84.4813 25.5281 82.8407C23.5156 79.4063 18.7578 78.5313 20.1797 76.8907C23.5594 75.1516 27.0047 77.3282 30.9969 83.2235C33.8844 87.5001 39.5172 86.7782 42.3719 86.0673C42.9953 83.497 44.3297 81.2001 46.1672 79.4173C30.7891 76.661 24.3797 67.2766 24.3797 56.1204C24.3797 50.7063 26.1625 45.7298 29.6625 41.7157C27.4313 35.0985 29.8703 29.4329 30.1984 28.5907C36.5531 28.022 43.1594 33.1407 43.6734 33.5454C47.2828 32.572 51.4063 32.0579 56.0219 32.0579C60.6594 32.0579 64.7938 32.5938 68.4359 33.5782C69.6719 32.6376 75.7969 28.2407 81.7031 28.7767C82.0203 29.6188 84.4047 35.1532 82.3047 41.6829C85.8484 45.7079 87.6531 50.7282 87.6531 56.1532C87.6531 67.3313 81.2 76.7266 65.7781 79.4391C67.0991 80.7382 68.1479 82.2874 68.8634 83.9963C69.5789 85.7053 69.9467 87.5396 69.9453 89.3923V101.697C70.0328 102.681 69.9453 103.655 71.5859 103.655C90.9563 97.1251 104.902 78.8267 104.902 57.2688C104.902 30.2313 82.9828 8.3454 55.9563 8.3454V8.3454Z" fill="black"/>
+                      </svg>
+                    </Link>
+                  </GitHub>
+                )}
                 <PostFullTitle className="post-full-title">{post.frontmatter.title}</PostFullTitle>
                 <PostFullCustomExcerpt className="post-full-custom-excerpt">
                   {post.frontmatter.excerpt}
@@ -292,11 +305,14 @@ export const PostFullHeader = styled.header`
 
   @media (max-width: 500px) {
     padding: 20px 0 35px;
+    margin-top: 15%;
   }
 `;
 
 const PostFullTags = styled.section`
+  margin-top: 5%;
   display: flex;
+  align-items: center;
   justify-content: flex-start;
   align-items: center;
   /* color: var(--midgrey); */
@@ -305,6 +321,38 @@ const PostFullTags = styled.section`
   line-height: 1.4em;
   font-weight: 600;
   text-transform: uppercase;
+
+  a {
+    margin-right: 0.5rem;
+    align-self: flex-start;
+  }
+`;
+
+const GitHub = styled.div`
+  font-size: 0;
+
+  svg {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-top: -4%;
+    margin-left: 100%;
+  }
+  
+  a {
+    font-size: 0;
+  }
+
+  @media (max-width: 500px) {
+    svg {
+      display: block;
+      width: 3.5rem;
+      height: 3.5rem;
+      margin-top: -4%;
+      margin-left: 90%;
+    }
+  }
+
 `;
 
 const PostFullCustomExcerpt = styled.p`
@@ -387,7 +435,7 @@ export const PostFullTitle = styled.h1`
 
 const PostFullImage = styled.figure`
   margin: 25px 0 50px;
-  height: 800px;
+  height: 100%;
   background: ${colors.lightgrey} center center;
   background-size: cover;
   border-radius: 5px;
@@ -429,6 +477,7 @@ export const query = graphql`
         date
         tags
         excerpt
+        github
         image {
           childImageSharp {
             fluid(maxWidth: 3720) {

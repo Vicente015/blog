@@ -10,6 +10,24 @@ export const outer = css`
   padding: 0 5vw;
 `;
 
+export const linkSvg = css`
+  .linkSvg{
+    display: inline-block;
+    padding-left: 4px;
+    color: #FFCC66;
+    box-shadow: none;
+    
+    a {
+      box-shadow: none;
+    }
+
+    svg {
+      fill: #FFCC66;
+      visibility: visible;
+    }
+  }
+`;
+
 // Centered content container blocks
 export const inner = css`
   margin: 0 auto;

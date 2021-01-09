@@ -7,6 +7,7 @@ image: img/Cover09012021.png
 date: '2021-01-09'
 draft: false
 excerpt: Apuntes de Prisma con SQLite y JavaScript.
+github: 'https://github.com/Vicente015/prisma-sqlite-js'
 ---
 
 # Prisma, SQLite y JavaScript

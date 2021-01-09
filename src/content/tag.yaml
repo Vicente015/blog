@@ -1,3 +1,7 @@
 - id: coding
   description: Cosas relacionadas con la programación
   image: img/CoverCoding.png
+
+- id: databases
+  description: Bases de datos
+  image: img/CoverDatabase.png

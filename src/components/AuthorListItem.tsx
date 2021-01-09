@@ -111,7 +111,7 @@ const AuthorNameTooltip = styled.div`
   white-space: nowrap;
   /* background: var(--darkgrey); */
   background: ${colors.darkgrey};
-  border-radius: 3px;
+  border-radius: 5px;
   box-shadow: rgba(39, 44, 49, 0.08) 0 12px 26px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
   opacity: 0;
   transition: all 0.35s cubic-bezier(0.4, 0.01, 0.165, 0.99);
@@ -134,7 +134,7 @@ const AuthorCardStyles = css`
   width: 400px;
   font-size: 1.4rem;
   line-height: 1.5em;
-  border-radius: 3px;
+  border-radius: 15px;
   opacity: 0;
   transition: all 0.35s cubic-bezier(0.4, 0.01, 0.165, 0.99);
   transform: scale(0.98) translateY(15px);

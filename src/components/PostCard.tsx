@@ -47,11 +47,15 @@ export const PostCard: React.FC<PostCardProps> = ({ post, large = false }) => {
       <PostCardContent className="post-card-content">
         <Link className="post-card-content-link" css={PostCardContentLink} to={post.fields.slug}>
           <PostCardHeader className="post-card-header">
-            {post.frontmatter.tags && (
-              <PostCardPrimaryTag className="post-card-primary-tag">
-                {post.frontmatter.tags[0]}
-              </PostCardPrimaryTag>
-            )}
+            <PostCardPrimaryTag className="post-card-primary-tag">
+              {post.frontmatter.tags && post.frontmatter.tags.length > 0 && post.frontmatter.tags.map(tag => {
+                return (
+                  <Link key={tag} to={`/tags/${_.kebabCase(tag)}/`}>
+                    {tag}
+                  </Link>
+                );
+              })}
+            </PostCardPrimaryTag>
             <PostCardTitle className="post-card-title">{post.frontmatter.title}</PostCardTitle>
           </PostCardHeader>
           <PostCardExcerpt className="post-card-excerpt">
@@ -157,8 +161,8 @@ const PostCardImageLink = css`
 `;
 
 const PostCardImage = styled.div`
-  width: auto;
-  height: 200px;
+  width: 100%;
+  height: 100%;
   background: ${colors.lightgrey} no-repeat center center;
   background-size: cover;
 `;
@@ -182,12 +186,19 @@ const PostCardContentLink = css`
 
 const PostCardPrimaryTag = styled.div`
   margin: 0 0 0.2em;
-  /* color: var(--blue); */
   color: ${colors.blue};
-  font-size: 1.2rem;
-  font-weight: 500;
-  letter-spacing: 0.2px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.3rem;
+  line-height: 1.4em;
+  font-weight: 600;
   text-transform: uppercase;
+
+  a {
+    margin-right: 0.5rem;
+  }
 `;
 
 const PostCardTitle = styled.h2`
