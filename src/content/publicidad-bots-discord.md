@@ -1,5 +1,5 @@
 ---
-layout: publicidad-bots-discord
+layout: post
 title: 'Publicidad abusiva en bots populares de Discord'
 author: [Vicente]
 tags: ['Discord']
