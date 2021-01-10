@@ -6,7 +6,7 @@ tags: ['Discord']
 image: img/Cover10012021.png
 date: '2021-01-10'
 draft: false
-excerpt: 
+excerpt: Algunos bots populares de Discord abusan de la plataforma para poner publicidad abusiva.
 ---
 
 Algunos bots populares de Discord abusan de la plataforma para poner publicidad abusiva.
