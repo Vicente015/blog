@@ -44,7 +44,7 @@ Un miembro del equipo de Vexera *(al cual censuro porque no he pedido permiso pa
 
 # Publicidad en los estados de bots
 
-El 39/09/2020 todos los bots adquiridos tenían en su estado publicidad de BlueStacks, esta promocionaba la app de Among Us en el emulador.
+El `39/09/2020` todos los bots adquiridos tenían en su estado publicidad de BlueStacks, esta promocionaba la app de Among Us en el emulador.
 
 ![Bot Ad](./img/botpost/botad2.png) ![Bot Ad](./img/botpost/botad3.png) ![Bot Ad](./img/botpost/botad4.png)
 
