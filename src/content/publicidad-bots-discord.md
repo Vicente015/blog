@@ -53,7 +53,7 @@ Varios usuarios informaron al staff de Discord en el servidor de Discord Develop
 Esta fue la respuesta de ellos:
 
 ![Staff reply](./img/botpost/staff1.png)
-> Voy a etiquetar rápidamente a @Mason en esto, ya que estará más tiempo que yo.
+> Voy a mencionar rápidamente a @Mason en esto, ya que estará más tiempo que yo.
 > Parece que todos los bots Bluestacks ahora anuncian enlaces Bluestacks en sus estados.
 
 > Suspiro
