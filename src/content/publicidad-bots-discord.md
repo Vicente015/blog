@@ -44,7 +44,7 @@ Un miembro del equipo de Vexera *(al cual censuro porque no he pedido permiso pa
 
 # Publicidad en los estados de bots
 
-El `39/09/2020` todos los bots adquiridos tenían en su estado publicidad de BlueStacks, esta promocionaba la app de Among Us en el emulador.
+El `29/09/2020` todos los bots adquiridos tenían en su estado publicidad de BlueStacks, esta promocionaba la app de Among Us en el emulador.
 
 ![Bot Ad](./img/botpost/botad2.png) ![Bot Ad](./img/botpost/botad3.png) ![Bot Ad](./img/botpost/botad4.png)
 
@@ -85,7 +85,7 @@ Además, también se conoció de un servicio de BlueStacks llamado DiscordAdvert
 * [Página principal](https://web.archive.org/web/20200614001114/https://discordadvertiser.com/building-community.html).
 * [Subdominio de bluestacks.com](https://web.archive.org/web/20200614000849/http://wp-d.bluestacks.com/building-community.html).
 
-En su publicación de [Medium](https://medium.com/@discordadvertiser/earn-money-from-your-discord-server-91f932d4bc6f) explican como funcionaba su servicio:
+En su publicación de [Medium](https://medium.com/@discordadvertiser/earn-money-from-your-discord-server-91f932d4bc6f) explican cómo funcionaba su servicio:
 
 Ingresabas a su plataforma invitando a su bot que hacía publicidad y "ganas" dinero. Al parecer esto resultó totalmente falso y en una estafa según las críticas en [TrustPilot](https://www.trustpilot.com/review/discordadvertiser.com).
 
@@ -118,7 +118,7 @@ Esta fue la [respuesta](https://www.reddit.com/r/discordapp/comments/hbfpal/psa_
 
 <a class="embedly-card" href="https://www.reddit.com/r/discordapp/comments/hbfpal/psa_some_of_discords_largest_bots_may_be_tracking/fv9i5er">Card</a>
 
-> Hola a todos. Mi nombre es Mason. Trabajo en Discord, y probablemente me hayas visto en varios servidores de desarrollo (¡incluido el nuestro!) Si estás involucrado en la comunidad de desarrollo de bots. Quería decir que estamos analizando detenidamente estas afirmaciones. Si bien la mayoría de ustedes aquí tiene la perspectiva correcta, nos tomamos estos comentarios en serio. Tenemos una línea de comunicación directa con las personas en BlueStacks y hemos estado en contacto con ellos desde el lunes para comprender y resolver esta situación, así como para informarles de la necesidad inmediata de ser transparentes sobre la propiedad de estos bots en sus diversos sitios web. Como recordatorio, el acceso de bot a cosas como la información de presencia (los juegos que juega, sus estados personalizados, su estado en línea / ausente / ocupado) requiere la aprobación y revisión manual de Discord comenzando con la introducción de nuestro programa de verificación de bots, de los cuales todos estos los bots han completado o aplicado.
+> Hola a todos. Mi nombre es Mason. Trabajo en Discord, y probablemente me hayas visto en varios servidores de desarrollo (¡incluido el nuestro!) Si estás involucrado en la comunidad de desarrollo de bots. Quería decir que estamos analizando detenidamente estas afirmaciones. Si bien la mayoría de ustedes aquí tiene la perspectiva correcta, nos tomamos estos comentarios en serio. Tenemos una línea de comunicación directa con las personas en BlueStacks y hemos estado en contacto con ellos desde el lunes para comprender y resolver esta situación, así como para informarles de la necesidad inmediata de ser transparentes sobre la propiedad de estos bots en sus diversos sitios web. Como recordatorio, el acceso de bot a cosas como la información de presencia (los juegos que juega, sus estados personalizados, su estado en línea / ausente / ocupado) requiere la aprobación y revisión manual de Discord comenzando con la introducción de nuestro programa de verificación de bots, de los cuales todos estos bots han completado o aplicado.
 
 * **1 de julio de 2020**, se actualizan los términos de servicio y política de privacidad para desarrolladores, esta nueva política de privacidad limita los datos sensibles a los que pueden acceder los bots, además es más estricta y clara.
 
@@ -128,7 +128,7 @@ Discord contactó con esta empresa para pedirles que sean más trasparentes, des
 
 # Opinión personal
 
-Es horrible que bots de Discord tengan enfoques en la publicidad abusiva, entiendo desde el punto de vista de los desarrolladores, en la información en la página de BotsLabs dicen que están bastante ocupados con otros trabajas y que por esas razones necesitaban de una empresa externa que les apoyara, desconozco que tipo de contratos tenían estos desarrolladores pero cómo de feos tienen que ser para poder obligarte a cambiar el estado de tu bot si les da la gana. Nunca vendería un bot de Discord de esta manera, prácticamente te estás riendo de los usuarios que confían en tu bot y servicio, la mayoría desconociendo estos hechos, por eso creo que es conveniente comentar eso en esta publicación.
+Es horrible que bots de Discord tengan enfoques en la publicidad abusiva, entiendo desde el punto de vista de los desarrolladores, en la información en la página de BotsLabs dicen que están bastante ocupados con otros trabajos y que por esas razones necesitaban de una empresa externa que les apoyara, desconozco que tipo de contratos tenían estos desarrolladores pero cómo de feos tienen que ser para poder obligarte a cambiar el estado de tu bot si les da la gana. Nunca vendería un bot de Discord de esta manera, prácticamente te estás riendo de los usuarios que confían en tu bot y servicio, la mayoría desconociendo estos hechos, por eso creo que es conveniente comentar eso en esta publicación.
 
 La respuesta de Discord ha sido la adecuada ya que han respondido y contactado rápidamente desde que se supo de estos hechos y la explicación que dieron respecto a qué tipo de anuncios están permitidos en bots es realmente clara, está bien que monetices con una función premium o menciones servicios externos que usas en ese comando, pero no buscar poner publicidad con fines económicos que no les aporta nada a los usuarios de Discord.
 
