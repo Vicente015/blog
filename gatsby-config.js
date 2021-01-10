@@ -27,6 +27,13 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-plugin-load-script',
+      options: {
+        src: '//embed.redditmedia.com/widgets/platform.js',
+        charset: 'UTF-8',
+      },
+    },
+    {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
