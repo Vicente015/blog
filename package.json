@@ -31,7 +31,7 @@
     "gatsby-plugin-load-script": "^1.1.0",
     "gatsby-plugin-postcss": "2.3.11",
     "gatsby-plugin-react-helmet": "3.3.10",
-    "gatsby-plugin-sharp": "2.6.35",
+    "gatsby-plugin-sharp": "2.12.2",
     "gatsby-plugin-sitemap": "2.4.12",
     "gatsby-plugin-typescript": "2.4.19",
     "gatsby-remark-abbr": "2.0.0",
