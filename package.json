@@ -16,7 +16,7 @@
   "dependencies": {
     "@emotion/core": "10.0.35",
     "@emotion/styled": "10.0.27",
-    "@emotion/styled-base": "10.0.31",
+    "@emotion/styled-base": "11.0.0",
     "cssnano": "4.1.10",
     "date-fns": "2.17.0",
     "emotion": "10.0.27",
